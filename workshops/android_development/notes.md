@@ -221,6 +221,8 @@ Devices can have wildly different resolutions. Using pixels can have a dramatic 
 
 Android has dps as units (Device-independent pixels), and there are 160 dp per inch on an android device.
 
+# Android Development Workshop
+
 ## Optimization
 
 What is too slow? Too slow is faster than you'd think. 750ms is very noticeable. Aim for response times that don't draw attention to the pause.
