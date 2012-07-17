@@ -1,6 +1,8 @@
 ## Resources
 
-** App repo **: git clone https://github.com/chrisjrn/oscon-2012-app
+https://github.com/chrisjrn/oscon-2012-app
+
+git clone git://github.com/chrisjrn/oscon-2012-app.git
 
 ## Keyboards
 
@@ -111,4 +113,102 @@ Goes back to the home screen of the ** current ** app you are on
 
 ## Graphic Design
 
+layout and typography are crisp and meaningful (Swiss design)
+
+use lines to define the styles of your text
+
+Interfaces:
+
+Dark text: things that you can interact with
+
+Faded text: there for context
+
+Lists:
+
+Dark text: things that you have not yet actioned or viewed
+
+Faded text: things that you have
+
+### Use Meaningful Icons
+
+If it is not obvious use text.
+
+** Obvious: **
+
+* other apps use the same icons. exploit familiarity.
+* it's something that people intuitively associate with
+
+### Heuristic Analysis
+
+Ask enough people. Even 5 people will help you find 75% of the usability issues in your app.
+
+10 people == diminishing returns
+
+### Order of importance
+
+1. Text
+2. Colours
+3. Icons
+
+## Design Decisions
+
+Adjectives and adverbs can really change a design
+
+Example:
+
+* I want to see what's going on at Oscon 2012
+* I want to ** quickly ** see what's going on at Oscon 2012
+
+## Building the app
+
+## Sample App Git Tag Timeline
+
+1. talk_listing_start
+2. talk_listing_end
+3. schedule_start
+4. schedule_end
+5. day_list_start
+6. day_list_end
+7. navigation_start
+8. navigation_end
+9. data_start
+10. data_end
+11. tabs_start
+12. tabs_end
+13.	theme_start
+14. theme_end
+
+## Lifecycle 
+
+* Most expensive operations should happen on create or destroy
+* Most frequent operations should occur in the normal app lifecycle
+* Always return the UI thread to the system ** ASAP **
+* Keeping off the UI thread avoids trainwrecks
+
+## Activities v Fragments
+
+UI work is done within fragments rather than activities. They become reusable components used by activities. Think partials.
+
+* Activities are expensive
+* Can create many fragments at the same time, but they all consume resources and need to be managed. They will exist until destroyed.
+
+## Applications
+
+Applications exist before any activities are created, and after any activities are torn down.
+
+## JSON and Android Development
+
+Use gson-x.x.x.jar instead of the native JSON support. It makes a huge difference.
+
+## Intents
+
+Only primitives can be added to Intents, although you can serialize objects into json and use those.
+
+As intents are passed, values can be added or manipulated to be extracted an used by the receiver of the intent.
+
+## Horizontal Swipe
+
+Horizontal swipes are not supported by the Android SDK (for some unknown reason)
+
+Luckily, android-support adds additional functionality such as horizontal swiping. Make sure to add and use it.
 
