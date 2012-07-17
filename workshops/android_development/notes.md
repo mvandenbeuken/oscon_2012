@@ -177,6 +177,9 @@ Example:
 12. tabs_end
 13.	theme_start
 14. theme_end
+15. make_faster
+16. navigation_refresh
+17. themeing_finished
 
 ## Lifecycle 
 
@@ -212,3 +215,43 @@ Horizontal swipes are not supported by the Android SDK (for some unknown reason)
 
 Luckily, android-support adds additional functionality such as horizontal swiping. Make sure to add and use it.
 
+## dp vs px
+
+Devices can have wildly different resolutions. Using pixels can have a dramatic impact on a user's experience based on the device they use.
+
+Android has dps as units (Device-independent pixels), and there are 160 dp per inch on an android device.
+
+## Optimization
+
+What is too slow? Too slow is faster than you'd think. 750ms is very noticeable. Aim for response times that don't draw attention to the pause.
+
+Using [profiling tools] (http://www.jpct.net/wiki/index.php/Profiling_Android_Applications) is super useful in determining where performance bottlenecks exist in apps.
+
+## Endpoints
+
+* Mobile users are impatient
+	* Be fast
+	* If you can't be fast, pretend to be fast (async)
+	* Be responsive, use background threads
+* Mobile users hate being surprised
+	* Dialog boxes __suck__
+	* Modals also ^
+	* Deleting and item should be followed up with an indication. (NOT a dialog)
+* Never drop data
+	* Important apps will trump your app
+	* Try to restart gracefully
+* Device conditions change - connectivity, position
+* Minimize your views - they are expensive and consume memory
+* Think about first launch. That first impression is the most important.
+* Think about your home activity. Be:
+	* Straightforward
+	* aesthetic
+	* consistent
+* Think about the ecosystem
+	* people will use other apps alongside yours
+* Think about the marketplace
+	* aesthetic icons
+	* honest and descriptive
+* ** Constant collaboration between design and development **
+* Beware the port
+* Start development early, and try to test, design and development for a variety of devices
