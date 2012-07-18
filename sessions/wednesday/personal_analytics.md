@@ -38,3 +38,38 @@ Physical
 
 Financial (not used much)
 
+## Check out:
+
+Sunny Consolvo
+
+## Lessons
+
+Short and Sweet Works
+
+The subject of the study drives participation
+
+## Evans' Experiment Engagement Lifecycle
+
+* Excited
+* Engaged
+* Elated
+* Nonplussed
+* Annoyed
+* Exhausted
+* Surprised
+
+## Resources
+
+http://www.pacoapp.com/
+
+http://code.google.com/p/paco/
+
+robert.evans@acm.org
+
+## Private OSCON Beta
+
+osconpaco.appspot.com/Main.html
+
+osconpaco.appspot.com/paco.apk
+
+Must allow sideloaded applications
