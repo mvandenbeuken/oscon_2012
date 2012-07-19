@@ -72,6 +72,19 @@ SSL required
 
 OpenID Connect
 
+## Top 10 API worst practices
+
+10. Poor error handling
+9. REST APIs that ignore HTTP rules
+8. Exposing your raw underlying data model
+7. Security complexity
+6. Unexpected & undocumented releases
+5. Poor dev experience
+4. Expect an MVCC framework will give you a great API
+3. Assume that if you build it they will come
+2. Inadequate support
+1. Poor documentation
+
 ## Resources
 
 * check out Netflix API
