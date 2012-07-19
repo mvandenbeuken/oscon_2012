@@ -43,6 +43,10 @@ WebSockets
 
 Webkit Browser Notifications
 
+## Meteor
+
+[Check it out](https://github.com/bashofmann/meteor_shoutbox_demo)
+
 ## Aside
 
 Look at commit walker
