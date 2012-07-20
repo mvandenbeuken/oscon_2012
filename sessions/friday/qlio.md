@@ -12,10 +12,13 @@
 
 [qcon2012.pdf for most of the notes](https://github.com/s3u/talks.git)
 
+
+[Demo](http://github.com/jcleblanc/api-masher)
+
 ## What is it?
 
 * a domain specific language for HTTP client programming
 * built with node.js
 * cuts down lines of code
 * reduces # of requests
-* save bandwidth
+* saves bandwidth
